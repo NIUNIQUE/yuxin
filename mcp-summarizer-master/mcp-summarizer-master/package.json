@@ -1,0 +1,30 @@
+{
+	"name": "mcp-summarizer",
+	"version": "1.0.0-alpha.2",
+	"description": "A MCP server for summarizing text",
+	"main": "dist/index.js",
+	"bin": {
+		"mcp-summarizer": "./dist/index.js"
+	},
+	"maintainers": [
+		{
+			"name": "Shellming",
+			"email": "qxm726@gmail.com"
+		}
+	],
+	"scripts": {
+		"dev": "tsc --watch",
+		"build": "tsc",
+		"start": "node ./dist/index.js"
+	},
+	"dependencies": {
+		"@ai-sdk/google": "^1.1.17",
+		"@modelcontextprotocol/sdk": "^1.6.0",
+		"ai": "^4.1.46",
+		"zod": "^3.24.2"
+	},
+	"devDependencies": {
+		"@types/node": "^22.9.3",
+		"typescript": "^5.6.2"
+	}
+}
